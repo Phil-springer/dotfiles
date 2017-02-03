@@ -18,6 +18,9 @@ sudo scutil --set HostName "$COMPUTER_NAME"
 sudo scutil --set LocalHostName "$COMPUTER_NAME"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
 
+## install brew and  git 
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install git 
 
 ## Dot files ###############################################################
 
@@ -29,9 +32,7 @@ git clone git@github.com:jshiell/dotfiles.git ~/dotfile
 
 ## Brew & apps #############################################################
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install git 
 brew update
 
 brew update
