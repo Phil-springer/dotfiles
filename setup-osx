@@ -9,7 +9,7 @@ if [[ -z "$COMPUTER_NAME" ]]; then
 fi
 
 BREW_APPS="htop-osx mtr iftop python terminal-notifier tmux rbenv ruby-build rbenv-bundler rbenv-bundler-ruby-version"
-CASK_APPS="flux google-chrome grandperspective hazel intellij-idea-bundled-jdk iterm2 java kaleidoscope little-snitch moom omnigraffle  slack spotify skype sublime-text  things witch  little-flocker"
+CASK_APPS="flux google-chrome grandperspective hazel intellij-idea-bundled-jdk intellij-idea-ce iterm2 java kaleidoscope little-snitch moom omnigraffle  slack spotify skype sublime-text  things witch  little-flocker"
 
 ## Machine name ############################################################
 
