@@ -10,10 +10,6 @@ fi
 
 BREW_APPS="htop-osx mtr iftop python terminal-notifier tmux rbenv ruby-build rbenv-bundler rbenv-bundler-ruby-version"
 CASK_APPS="flux google-chrome grandperspective hazel intellij-idea-bundled-jdk iterm2 java kaleidoscope little-snitch moom omnigraffle  slack spotify skype sublime-text  things witch  little-flocker"
-POST_CASK_INSTALLERS="'/opt/homebrew-cask/Caskroom/backblaze/latest/Backblaze Installer.app' '/opt/homebrew-cask/Caskroom/battle-net/latest/Battle.net-Setup-enUS.app'"
-
-# Hack oddities that aren't in cask - HWMonitor, DPCIManager, KextBeast
-
 
 ## Machine name ############################################################
 
@@ -48,12 +44,12 @@ done
 for APP in ${CASK_APPS}; do
     brew cask install --appdir=/Applications --prefpanedir=/Library/PreferencePanes "$APP"
 done
-for INSTALLER in ${POST_CASK_INSTALLERS}; do
-    open $INSTALLER
-done 
 
 brew cleanup
 
+
+## venv 
+pip install virtualenv
 
 ## Extra toys
 
